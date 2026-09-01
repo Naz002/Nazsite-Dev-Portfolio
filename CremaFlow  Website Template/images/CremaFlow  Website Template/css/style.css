@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    /* Background */
+    --Background: #FFF8F2;
+    --Section-Background: #F8EFE7;
+
+    /* Brand */
+    --Primary: #8B5E3C;
+    --Primary-Hover: #71492E;
+    --Accent: #C98C5A;
+
+    /* Text */
+    --Heading: #3E2723;
+    --Text: #5D4037;
+
+    /* UI */
+    --White: #FFFFFF;
+    --Border: #E7DDD4;
+    --Shadow: rgba(62, 39, 35, 0.08);
+
+    /* Button */
+    --Button-Text: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+     font-family: "Playfair", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Poppins", sans-serif;
+      background: var(--Background);
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.logo a{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--Primary);
+    font-family: "Playfair", serif ;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Text);
+    transition: all 0.3s ease;
+}
+.menu li a:hover{
+    color: var(--Primary-Hover);
+
+}
+.nav-btn{
+    padding: 8px 16px;
+    background-color: var(--Primary);
+    
+    border: none;
+    outline: none;
+    border-radius: 8px;
+
+}
+.nav-btn a{
+    text-decoration: none;
+    color: var(--Button-Text);
+    cursor: pointer;
+}
+.nav-btn a:hover{
+    background-color: var(--Primary-Hover);
+}
+.toggle-btn {
+    width: 40px;
+    height: 40px;
+    color: var(--Primary);
+    display: none;
+    
+}

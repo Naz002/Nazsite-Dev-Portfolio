@@ -1,0 +1,76 @@
+1. Navbar
+
+Navigation should be simple and easy to use.
+
+2. Hero
+
+This is the first impression.
+
+Goal:
+
+"I want to visit this café."
+
+3. Trusted By / Statistics
+
+Examples:
+
+☕ 5,000+ Cups Served
+😊 2,000+ Happy Customers
+⭐ 4.9 Rating
+
+This builds trust quickly.
+
+4. Why Choose CremaFlow
+
+Tell visitors why they should choose your café.
+
+Examples:
+
+Premium Coffee
+Cozy Workspace
+Fresh Pastries
+Free Wi-Fi
+5. Featured Coffee
+
+Show your best-selling drinks.
+
+Don't overwhelm visitors with the full menu here.
+
+6. About Preview
+
+A short story about the café.
+
+Add a "Read More" button that links to the About page.
+
+7. Today's Specials
+
+This makes the homepage feel fresh and encourages visitors to explore.
+
+8. Gallery Preview
+
+Show 4–6 beautiful images.
+
+Add a "View Gallery" button.
+
+9. Testimonials
+
+Social proof.
+
+Real or demo testimonials make the business feel more trustworthy.
+
+10. Reservation CTA
+
+End with a strong action.
+
+Example:
+
+"Reserve your table today."
+
+11. Footer
+
+Include:
+
+Contact
+Opening Hours
+Social Links
+Copyright

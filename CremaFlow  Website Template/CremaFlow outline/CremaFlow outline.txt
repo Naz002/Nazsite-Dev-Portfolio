@@ -1,0 +1,68 @@
+────────────────────────────────────────────
+                NAVBAR
+ Logo         Home About Menu Gallery Contact
+                        [Book a Table]
+────────────────────────────────────────────
+
+              HERO SECTION
+
+     Where Great Coffee Meets Great Ideas
+
+    Handcrafted coffee, cozy interiors,
+      and the perfect workspace.
+
+   [View Menu]     [Book a Table]
+
+         ☕ Large coffee image/video
+
+────────────────────────────────────────────
+
+        WHY CHOOSE CREMAFLOW
+
+ ☕ Premium Beans
+ 🌿 Cozy Atmosphere
+ 📶 Fast Wi-Fi
+ 🍰 Fresh Pastries
+
+────────────────────────────────────────────
+
+        FEATURED COFFEE
+
+ ┌─────────┐ ┌─────────┐ ┌─────────┐
+ │ Latte   │ │ Mocha   │ │ Espresso│
+ └─────────┘ └─────────┘ └─────────┘
+
+────────────────────────────────────────────
+
+          ABOUT PREVIEW
+
+ Large café interior image
+
+"Our café is designed for people
+who love coffee and creativity."
+
+[Read More]
+
+────────────────────────────────────────────
+
+          TESTIMONIALS
+
+★★★★★
+
+"Best coffee in town."
+
+★★★★★
+
+"A perfect place to work."
+
+────────────────────────────────────────────
+
+      RESERVATION CTA
+
+ Ready for your next coffee?
+
+ [Book a Table]
+
+────────────────────────────────────────────
+
+             FOOTER

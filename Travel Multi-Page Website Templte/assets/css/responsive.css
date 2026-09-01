@@ -1,0 +1,551 @@
+/* ==== Responsive Layout CSS Start ==== */
+
+@media(max-width: 1024px){
+    .navbar{
+        position: relative;
+        gap: 15px;
+    }
+
+      .logo{
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    .menu-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        z-index: 1001;
+    }
+      .menu-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 22px;
+        height: 22px;
+
+
+    }
+    .menu-icon span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        flex-shrink: 0;
+        background-color: var(--primary);
+        border-radius: 999px;
+        transition: 
+                opacity 0.25s ease,
+                transform 0.25s ease ;
+    }
+    .menu-list{
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+  /*  Mobile Menu  */
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 20px);
+        left: 0;
+        width: 100%;
+        background: var(--background-soft);
+        box-shadow: var(--shadow-md);
+        border-radius: var(--radius-md);
+         padding: 15px 25px;
+        z-index: 1000;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        pointer-events: none;
+
+        transition: 
+                 opacity 0.25s ease,
+                 transform 0.25s ease,
+                 visibility 0.25s ease; 
+
+
+    }
+
+     .menu.active{
+       opacity: 1;
+       visibility: visible;
+       transform: translateY(0);
+       pointer-events: auto;
+       }
+       .menu-list li{
+        width: 100%;
+       }
+
+       .menu-list li a{
+        display: block;
+        width: 100%;
+        padding: 12px 5px;
+        text-align: center;
+       } 
+    .menu-toggle{
+        display: block;
+    }
+    .who-we-are h2,
+.our-mission h2,
+.our-story h2{
+    font-size: 32px;
+}
+    
+       .why-travel-with-us-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+     .menu-icon span{
+        display: block;
+        width: 22px;
+        height: 2px;
+    
+        flex-shrink: 0;
+        background-color: var(--primary);
+        border-radius: 999px;
+        
+        transition: 
+               opacity 0.25s ease,
+               transform 0.25s ease;
+
+     }
+
+     /* Hmburger -> X */
+
+     .menu-toggle.active .menu-icon span:nth-child(1){
+      
+        transform: translateY(7px) rotate(45deg);
+     }
+     .menu-toggle.active .menu-icon span:nth-child(2){
+        opacity: 0;
+     }
+     .menu-toggle.active .menu-icon span:nth-child(3){
+      
+        transform: translateY(-7px) rotate(-45deg);
+     }
+    .menu.active{
+       opacity: 1;
+       visibility: visible;
+       transform: translateY(0);
+       pointer-events: auto;
+       }
+ 
+    .menu li a{
+        display: block;
+        padding: 12px 5px;
+        text-align: center;
+    }
+ 
+    /* Mobile Button */
+   
+.menu .mobile-btn{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+         color: #FFFFFF;
+        
+    }
+     .menu .mobile-btn .btn{
+        display: block;
+        width: 100%;
+        color: #FFFFFF;
+    }
+    /* Hide Desktop Book-now Button */
+ 
+    .navbar > .btn{
+        display: none;
+    }
+
+    .why-choose-us-card{
+        padding: 18px;
+    }
+    .hero{
+        min-height: 60vh;
+        padding: 40px 20px;
+    }
+    .hero-content{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hero-content span{
+        font-size: 14px;
+    }
+    .hero h1 span{
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .hero p{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .hero .btn{
+        padding: 12px 28px;
+    }
+    section{
+        padding: 45px 0;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .section-title{
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    .newsletter{
+        width: 90%;
+        flex-direction: column;
+        padding: 25px;
+    }
+    .newsletter-form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .destination-card{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .destination-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(15, 61, 76, 0.12);
+    }
+    .destination-image img{
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+    .destination-image{
+        overflow: hidden;
+    }
+    .destination-card:hover .destination-image img{
+        transform: scale(1.05);
+    }
+    .about-hero{
+        height:  400px;
+    }
+    .destination-grid .card{
+    flex: 0 0 calc((100% - var(--space-md)) / 2);
+    }
+
+    .destination-hero .hero-content h1{
+        font-size: 42px;
+    }
+    .destination-hero .hero-content .description{
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    .hero, 
+.about-hero,
+.destination-hero,
+.package-hero,
+.contact-hero{
+    min-height: 60vh;
+    height: auto;
+}
+}
+
+
+
+@media(max-width: 850px){
+
+  
+      .package-grid,
+      .destination-grid,
+    .testimonial-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .why-choose-us-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .hero{
+        height: 65vh;
+        padding: 50px 30px;
+    }
+    .hero-content{
+        max-width: 650px;
+    }
+    .hero h1{
+        font-size: 46px;
+    }
+    .hero h1 span{
+        font-size: 46px;
+    }
+    .hero p{
+        font-size: 17px;
+    }
+    .destination-image img{
+        height: 220px;
+    }
+    .destination-content{
+        padding: 18px;
+    }
+    .destination-content h3{
+        font-size: 22px;
+    }
+    .package-image img{
+        height: 220px;
+    }
+    .package-content{
+        padding: 18px;
+    }
+    .package-name{
+        font-size: 22px;
+    }
+    .testimonial-card{
+        padding: var(--space-xl);
+    }
+    .testimonial-card h3{
+        font-size: 20px;
+    }
+    .testimonial-card .review{
+        line-height: 1.6;
+    }
+    .why-choose-us-card{
+        gap: 15px;
+        padding: 20px;
+    }
+    .why-choose-us-icons svg{
+        width: 50px;
+        height: 50px;
+    }
+    .why-choose-us-content h3{
+        font-size: 20px;
+    }
+    .why-choose-us-content p{
+        font-size: 14px;
+    }
+ 
+ 
+  .navbar{
+    gap: 16px;
+
+  }
+
+  .logo{
+    font-size: 25px;
+ }
+  .desktop-btn{
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+
+
+}
+
+@media(max-width: 992px){
+    .package-benefits-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+
+
+
+@media(max-width: 480px){
+    .container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-hero h1{
+        font-size: 42px;
+    }
+    .about-hero p{
+        font-size: 14px;
+    }
+    .who-we-are h2,
+    .our-mission h2,
+    .why-travel-with-us h2,
+    .our-story h2{
+        font-size: 28px;
+    }
+    .destination-grid .card{
+        flex: 0 0 100%;
+    }
+    .destination-grid .card{
+        flex: 0 0 100%;
+    }
+    .package-hero .package-hero-content h1{
+        font-size: 42px;
+    }
+
+   .hero, 
+.about-hero,
+.destination-hero,
+.package-hero,
+.contact-hero{
+    min-height: 50vh;
+    height: auto;
+}
+
+.contact-grid{
+  grid-template-columns: 1fr;
+}
+}
+
+
+@media(max-width: 600px){
+    .destination-grid,
+    .package-grid,
+    .testimonial-grid
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+    .why-choose-us-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-brand .description{
+        max-width: 350px;
+        color: var(--text-on-dark);
+    }
+    .footer-social{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .why-travel-with-us-grid{
+        grid-template-columns: 1fr;
+    }
+    .who-we-are .description,
+    .our-mission .section-title p,
+    .our-story .section-title p,
+    .call-to-action p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .why-travel-with-us .card p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 576px){
+    .package-cards{
+        padding: 60px 0;
+    }
+    .package-cards .heading{
+        font-size: 32px
+    }
+    .package-cards .description{
+        font-size: 15px;
+    }
+
+    .why-choose-our-packages{
+        padding: 60px 0;
+    }
+    
+    .why-choose-our-packages .heading{
+        font-size: 32px;
+    }
+
+    .package-benefits-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media(max-width: 400px){
+    .hero h1{
+   
+        font-size: 24px;
+        line-height: 1.1;
+    
+    }
+    .logo{
+        font-size: 23px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero h1 span {
+        display: block;
+       font-size: 24px;
+    }
+    .why-choose-us-content h3{
+        font-size: 18px;
+    }
+    .why-choose-us-content p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .destination-grid .card{
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .destination-grid .destination-image img{
+        height: 180px;
+        border-radius: 6px;
+    }
+    .destination-grid .destination-content{
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    .destination-grid .destination-content h2{
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 6px;
+    }
+
+    .destination-grid .destination-content .tagline{
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+
+    }
+    .destination-grid .destination-content .description{
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+
+    }
+    .destination-grid .destination-content .btn{
+        font-size: 13px;
+        padding: 9px 14px;
+        margin: 5px 0;
+    }
+}
+
+@media(prefers-reduced-motion: reduce){
+    .menu{
+        transition: none;
+    }
+}
+
+
+
+
+/* ====  Responsive Layout CSS End ==== */

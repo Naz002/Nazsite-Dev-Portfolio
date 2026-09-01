@@ -1,0 +1,145 @@
+/* ==== Destination Page CSS Start ==== */
+
+.destination-hero{
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/destinations/destination-hero.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+
+
+@keyframes heroFadeUp{
+   from{
+     opacity: 0;
+     transform:translateY(30px);
+   
+   }
+   to{
+    opacity: 1;
+    transform:translateY(0);
+   }
+}
+
+.destination-hero .hero-content{
+    animation: heroFadeUp 0.8s ease;
+}
+.destination-hero .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content .subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+.destination-hero .hero-content h1{
+    font-size: 56px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+.destination-slider{
+    overflow: hidden;
+}
+.destination-grid{
+    display: flex;
+    flex: 1;
+    gap: var(--space-md);
+    transition: transform 0.4s ease;
+ 
+}
+.destination-grid .card{
+    margin-bottom: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex: 0 0 calc((100% - 40px) / 3);
+    transition: 0.3s ease;
+}
+.previous-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.destination-grid .card:hover{
+    transform: translateY(-5px);
+}
+
+.destination-grid .destination-image img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.destination-grid .destination-image img:hover{
+    transform: scale(1.05);
+}
+
+.destination-grid .destination-content{
+    margin-top: 10px;
+}
+.destination-grid .destination-content h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.destination-grid .destination-content .tagline{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: var(--text-light);
+
+}
+.destination-grid .destination-content .btn{
+    margin: 10px 0;
+    transition: 0.3s ease;
+}
+.destination-grid .destination-content .btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== Destination Page CSS End ==== */
+
+@media(max-width: 1024px){
+     .destination-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:1024px){
+    .destination-grid .card{
+    flex: 0 0 calc((100% - 40px) / 2);
+    transition: 0.3s ease;
+}
+    }
+
+@media(max-width: 480px){
+     .destination-grid .card{
+    flex: 0 0 100%;
+    transition: 0.3s ease;
+}
+.destination-hero{
+    min-height: 50vh;
+}
+}

@@ -1,0 +1,1636 @@
+/* ==== Global CSS Start ==== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+      font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+     overflow-y: auto;
+     overflow-x: hidden; 
+}
+
+:root {
+    /* Brand Color */
+    --primary: #0F3D4C;
+    --primary-dark: #082C38;
+    --accent: #D97757;
+    --accent-hover: #C56345;
+     
+     /* Text Color */
+    --text: #1F2933;
+    --text-light: #66727D;
+    --text-on-dark: #D7E2E5;
+
+      /* Background Color */
+    --background: #FFFFFF;
+    --background-soft: #F5F7F6;
+
+     /* UI */
+    --border: #E2E8E8;
+    --success: #2E7D32;
+    --danger: #C62828;
+
+    /* Border Radius */
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-full: 999px;
+
+     /* Spacing */
+
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    /* Shadow */
+
+    --shadow-sm: 0 2px 8px rgba(15, 61, 76, 0.06);
+    --shadow-md: 0 8px 25px rgba(15, 61, 76, 0.08);
+    --shadow-lg: 0 15px 40px rgba(15, 61, 76, 0.12);
+
+    /* Transition */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.4s ease;
+
+    /* Layout */
+
+    --container-width: 1200px;
+    --container-padding: 5%;
+
+
+}
+h1, 
+h2, 
+h3,
+h4,
+h5,
+h6{
+      font-family: "Playfair", serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: calc(100% - (var(--container-padding) * 2));
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+section{
+    padding: 50px 0;
+}
+header{
+    padding: 20px 0;
+    position: relative;
+    background: var(--background);
+    z-index: 1000;
+}
+
+/* ==== Global CSS Ends ==== */
+
+/* ==== Navbar CSS Start ==== */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color:  var(--primary);
+}
+.menu{
+    display: flex;
+    gap: 20px;
+   align-items: center;
+}
+
+.menu a{
+    font-weight: 500;
+    color: var(--text);
+}
+.menu a:hover{
+    color: var(--accent);
+}
+.menu a:focus-visible{
+    color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.menu .mobile-btn{
+    display: none;
+
+}
+.desktop-btn{
+    display: inline-block;
+}
+
+/* ==== Navbar CSS End ==== */
+
+/* ==== HomePage CSS Start ==== */
+
+
+.hero{
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+             linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), 
+     url(../images/homepage/hero/travel-hero.jpg);
+
+    background-size: cover;
+    background-position: center; 
+}
+
+.hero-content{
+   max-width: 700px;
+   margin: 0 auto;
+   color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.hero-content span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.hero h1{
+    font-size: 56px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.hero h1 span{
+    display: inline;
+    font-size: 56px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    background:  var(--primary);
+    color: var(--background);
+    cursor: pointer;
+    transition: background-color var(--transition-normal);
+}
+.btn:hover{
+    background-color: var(--accent);
+}
+
+.btn:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.card{
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* ---- Destination start ----- */
+
+/* .destination-card,  */
+.package-card,
+.testimonial-card{
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+.section-title{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.sub-heading{
+    font-size: 16px;
+    margin-bottom: 10px;
+        color: var(--text);
+}
+.heading{
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.description{
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-light);
+
+}
+.destination-content p,
+.package-content p,
+.testimonial-card .review,
+.why-choose-us-content p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.destinations-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.destination-card{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.destination-image img{
+    height: 250px;
+    object-fit: cover;
+}
+.destination-content{
+    padding: 20px;
+}
+.destination-content h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.destination-content .description{
+    color: var(--text-light);
+}
+.rating{
+    color: var(--accent);
+}
+.destination-content .rating{
+    margin-bottom: 5px;
+}
+.destination-content .duration{
+    margin-bottom: 5px;
+}
+.destination-content .price{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Why Choose Us */
+.why-choose-us-icons svg{
+  width: 60px;
+  height: 60px;
+}
+.why-choose-us-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.why-choose-us-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+}
+.why-choose-us-icons{
+    flex-shrink: 0;
+}
+.why-choose-us-content h3{
+    font-size: 22px;
+}
+.why-choose-us .description{
+    padding: 20px 0;
+}
+
+.package-content{
+    padding: 20px;
+}
+.package-name{
+   font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.package-content .package-name a{
+   
+    color: var(--text);
+}
+.package-content .rating{
+    margin-bottom: 5px;
+}
+.package-content .duration{
+    margin-bottom: 5px;
+}
+.package-content .price{
+    font-size: 20px;
+    font-weight: 600;
+}
+.package .description{
+    margin-bottom: 20px;
+}
+/* testmonial start*/
+
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.testimonial-card{
+    padding: var(--space-xl);
+
+}
+.testimonial-card h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.testimonial-card .location{
+    margin-bottom: 10px;
+}
+.testimonial-card .rating{
+    margin-bottom: 15px;
+}
+.testimonial-card .review{
+    line-height: 1.7;
+}
+.newsletter{
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+    gap: 15px;
+    background: var(--background-soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.newsletter-form{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+.newsletter-form input{
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.newsletter-form input:focus{
+    outline: none;
+}
+
+footer{
+    padding: 60px 0 20px;
+      background: var(--primary);
+      color: var(--background);
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.footer-brand .logo{
+    margin-bottom: 15px;
+}
+.footer-brand .description{
+    max-width: 350px;
+}
+.footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-nav a{
+    color:  var(--text-on-dark);
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover{
+    color: var(--accent);
+}
+.footer-contact h2{
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--text-on-dark);
+}
+footer .logo{
+    color: #fff;
+}
+.footer-contact p{
+    margin-bottom: 8px;
+}
+.footer-social{
+    display: flex;
+    gap: 15px;
+    color: #fff;
+}
+.footer-social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-on-dark);
+    transition: color 0.3s ease;
+}
+.footer-social a:hover{
+    color: var(--accent);
+}
+.footer-social svg{
+    width: 25px;
+    height: 25px;
+    fill:  var(--text-on-dark);
+}
+.footer-social svg:hover{
+    fill: var(--accent);
+}
+.footer-bottom{
+    margin-top: 40px;
+    padding-top: 20px ;
+    text-align: center;
+}
+.menu-toggle{
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 1;
+}
+/* .menu-toggle:active .menu-icon{
+    transform: scale(0.85);
+} */
+.menu-toggle:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+
+/* ==== HomePage CSS End ==== */
+
+
+/* ==== About Page CSS Start ==== */
+
+.about-hero{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+             linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), 
+     url(../images/Aboutpage/about-hero.jpg);
+
+    background-size: cover;
+    background-position: center; 
+}
+
+.hero-content{
+    text-align: center;
+    max-width: 700px;
+    padding: 15px;
+    height: 500px;
+}
+
+.about-hero .subtitle{
+
+    display: inline-block;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.about-hero h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 10px 0 20px;
+}
+
+.about-hero p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+.who-we-are h2{
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+.who-we-are .description{
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 20px ;
+}
+.who-we-are .btn{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.our-mission h2{
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+.our-mission .section-title p{
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto;
+  color: var(--text-light);
+}
+
+.why-travel-with-us h3{
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 10px 0 40px;
+}
+.why-travel-with-us-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.why-travel-with-us .card{
+    padding: 30px 24px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    background: #f5f5f5;
+    height: 100%;
+    box-shadow: var(--shadow-md);
+     transition: 0.3s ease;
+   
+}
+.why-travel-with-us .card:hover{
+    transform: translateY(-5px);
+   
+}
+.why-travel-with-us-grid .card h3{
+     margin-bottom: 15px;
+     margin-top: 0;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+
+.our-story h2{
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+
+.our-story .section-title p{
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.call-to-action{
+    padding: 70px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.call-to-action h2{
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+.call-to-action p{
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+.call-to-action .btn{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 12px 28px;
+}
+.who-we-are,
+.our-mission,
+.why-travel-with-us,
+.our-story,
+.call-to-action{
+    padding: 70px 0;
+}
+
+
+
+
+/* ==== About Page CSS End ==== */
+
+
+/* ==== Destination Page CSS Start ==== */
+
+.destination-hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/destinations/destination-hero.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+
+
+@keyframes heroFadeUp{
+   from{
+     opacity: 0;
+     transform:translateY(30px);
+   
+   }
+   to{
+    opacity: 1;
+    transform:translateY(0);
+   }
+}
+
+.destination-hero .hero-content{
+    animation: heroFadeUp 0.8s ease;
+}
+.destination-hero .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content .subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+.destination-hero .hero-content h1{
+    font-size: 56px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+.destination-slider{
+    overflow: hidden;
+}
+.destination-grid{
+    display: flex;
+    flex: 1;
+    gap: var(--space-md);
+    transition: transform 0.4s ease;
+ 
+}
+.destination-grid .card{
+    margin-bottom: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex: 0 0 calc((100% - 40px) / 3);
+    transition: 0.3s ease;
+}
+.previous-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.destination-grid .card:hover{
+    transform: translateY(-5px);
+}
+
+.destination-grid .destination-image img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.destination-grid .destination-image img:hover{
+    transform: scale(1.05);
+}
+
+.destination-grid .destination-content{
+    margin-top: 10px;
+}
+.destination-grid .destination-content h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.destination-grid .destination-content .tagline{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: var(--text-light);
+
+}
+.destination-grid .destination-content .btn{
+    margin: 10px 0;
+    transition: 0.3s ease;
+}
+.destination-grid .destination-content .btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== Destination Page CSS End ==== */
+
+
+/* ==== Package Page CSS Start ==== */
+
+.package-hero{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../images/packages/package-hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ .package-hero-content{
+    max-width: 700px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.package-hero .package-hero-content h1{
+    font-size: 56px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.package-hero .package-hero-content .subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+
+}
+.package-hero .package-hero-content p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+.package{
+    padding: 80px 0;
+}
+/* ===== Package Introduction Start =====  */
+
+.package-introduction{
+    padding: 80px 0;
+}
+.package-introduction .section-title{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.package-introduction .heading{
+    margin-bottom: 20px;
+}
+.package-introduction .description{
+    line-height: 1.7;
+}
+
+/* ===== Package Introduction End =====  */
+
+/* ===== Package Cards Start ===== */
+.package-cards{
+    padding: 80px 0;
+}
+.package-cards .section-title{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.package-cards .sub-heading{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.package-cards .heading{
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.package-cards .description{
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+/* ===== Package Cards End ===== */
+
+/* ===== Package Cards Grid Start ===== */
+
+.package-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.package-card{
+  
+    overflow: hidden;
+}
+
+.package-image{
+    overflow: hidden;
+}
+.package-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.package-card:hover .package-image img{
+    transform: scale(1.05);
+}
+
+.package-content{
+    padding: 20px;
+}
+
+.package-content h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.package-content .rating{
+    margin-bottom: 5px;
+}
+
+.package-content .duration{
+    margin-bottom: 8px;
+}
+
+.package-content .tagline{
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.package-content .price{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ===== Package Cards Grid End ===== */
+
+
+/* ===== Why Choose Our Package Start ===== */
+
+.why-choose-our-packages{
+    padding: 80px 0;
+
+}
+.why-choose-our-packages .section-title{
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-choose-our-packages .subtitle{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.why-choose-our-packages .heading{
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.package-benefits-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+.package-benefits-grid .card{
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: var(--radius-lg);
+    background: var(--background);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    transition: 0.3s ease;
+}
+
+.package-benefits-grid .card:hover{
+    transform: translateY(-3px);
+}
+.package-benefits-grid .card h3{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.package-benefits-grid .card p{
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ==== Package Page CSS End ==== */
+
+/* ==== ContactUs Page CSS Start ==== */
+
+
+/* ===================================
+     ContactUs Hero 
+====================================== */
+
+
+.contact-hero{
+    padding: 100px 0;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../images/contact/contact-hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.contact-hero .hero-content{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.contact-hero .subtitle{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.contact-hero h1{
+   font-size: 56px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   line-height: 1.2;
+   text-align: center;
+}
+.contact-hero .section-title p{
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* ===================================
+     ContactUs Information Start
+====================================== */
+.contact-information{
+    padding: 80px 0;
+}
+.contact-information .section-title{
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.contact-grid{
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.contact-card{
+    padding: var(--space-xl);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15, 61, 73, 0.10);
+}
+.contact-card h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-card p{
+    font-size: 15px;
+    color: var(--text-light);
+}
+
+
+/* ===================================
+     ContactUs Form
+====================================== */
+
+.contact-form{
+    padding: 80px 0;
+  
+}
+.contact-form-wrapper{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.form-group{
+    margin-bottom: var(--space-md);
+      text-align: start;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: var(--space-xs);
+    
+}
+
+.form-control{
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    color: var(--text);
+    background: var(--background);
+    font: inherit;
+    transition: border-color var(--transition-fast),
+                box-shadow var(--transition-fast);
+}
+
+.form-control:focus{
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(15, 61, 76, 0.1);
+}
+
+.form-control::placeholder{
+    color: var(--text-light);
+}
+textarea.form-control{
+    resize: vertical;
+    min-height: 150px;
+}
+
+
+
+/* ===================================
+     ContactUs Information End
+====================================== */
+
+/* ===================================
+     Location Start
+====================================== */
+.contact-location{
+    padding: 80px 0;
+}
+.location-content{
+    margin: 0 auto;
+}
+.location-info{
+    padding: var(--space-xl);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-info:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.035);
+}
+.location-info h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.location-info p{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+/* ===================================
+     Location End
+====================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== Responsive Layout CSS Start ==== */
+
+@media(max-width: 1024px){
+    .destinations-grid,
+    .package-grid,
+    .testimonial-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .why-choose-us-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero{
+        height: 65vh;
+        padding: 50px 30px;
+    }
+    .hero-content{
+        max-width: 650px;
+    }
+    .hero h1 span{
+        font-size: 46px;
+    }
+    .hero p{
+        font-size: 17px;
+    }
+    .destination-image img{
+        height: 220px;
+    }
+    .destination-content{
+        padding: 18px;
+    }
+    .destination-content h3{
+        font-size: 22px;
+    }
+    .package-image img{
+        height: 220px;
+    }
+    .package-content{
+        padding: 18px;
+    }
+    .package-name{
+        font-size: 22px;
+    }
+    .testimonial-card{
+        padding: var(--space-xl);
+    }
+    .testimonial-card h3{
+        font-size: 20px;
+    }
+    .testimonial-card .review{
+        line-height: 1.6;
+    }
+    .why-choose-us-card{
+        gap: 15px;
+        padding: 20px;
+    }
+    .why-choose-us-icons svg{
+        width: 50px;
+        height: 50px;
+    }
+    .why-choose-us-content h3{
+        font-size: 20px;
+    }
+    .why-choose-us-content p{
+        font-size: 14px;
+    }
+    .why-travel-with-us-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+  .navbar{
+    gap: 20px;
+
+  }
+
+  .logo{
+    font-size: 25px;
+ }
+  .desktop-btn{
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  
+
+
+}
+
+@media(max-width: 992px){
+    .package-benefits-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .navbar{
+        position: relative;
+    }
+    .menu-toggle{
+        display: block;
+        /* order: 2; */
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .logo{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--primary);
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 20px);
+        left: 0;
+        width: 100%;
+        background: var(--background-soft);
+        box-shadow: var(--shadow-md);
+        border-radius: var(--radius-md);
+         padding: 15px 25px;
+        z-index: 1000;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        pointer-events: none;
+
+        transition: 
+                 opacity 0.25s ease,
+                 transform 0.25s ease,
+                 visibility 0.25s ease; 
+
+
+    }
+    .menu-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 24px;
+        height: 24px;
+
+
+    }
+
+     .menu-icon span{
+        display: block;
+        width: 24px;
+        height: 2px;
+    
+        flex-shrink: 0;
+        background-color: var(--primary);
+        border-radius: 999px;
+        
+        transition: 
+               opacity 0.25s ease,
+               transform 0.25s ease;
+
+     }
+
+     .menu-toggle.active .menu-icon span:nth-child(1){
+      
+        transform: translateY(7px) rotate(45deg);
+     }
+     .menu-toggle.active .menu-icon span:nth-child(2){
+        opacity: 0;
+     }
+     .menu-toggle.active .menu-icon span:nth-child(3){
+      
+        transform: translateY(-7px) rotate(-45deg);
+     }
+    .menu.active{
+       opacity: 1;
+       visibility: visible;
+       transform: translateY(0);
+       pointer-events: auto;
+       }
+ 
+    .menu li a{
+        display: block;
+        padding: 12px 5px;
+        text-align: center;
+    }
+.menu .mobile-btn{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+        color: #FFFFFF;
+        
+    }
+ 
+    .navbar > .btn{
+        display: none;
+    }
+
+    .why-choose-us-card{
+        padding: 18px;
+    }
+    .hero{
+        min-height: 60vh;
+        padding: 40px 20px;
+    }
+    .hero-content{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hero-content span{
+        font-size: 14px;
+    }
+    .hero h1 span{
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .hero p{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .hero .btn{
+        padding: 12px 28px;
+    }
+    section{
+        padding: 45px 0;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .section-title{
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    .newsletter{
+        width: 90%;
+        flex-direction: column;
+        padding: 25px;
+    }
+    .newsletter-form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .destination-card{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .destination-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(15, 61, 76, 0.12);
+    }
+    .destination-image img{
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+    .destination-image{
+        overflow: hidden;
+    }
+    .destination-card:hover .destination-image img{
+        transform: scale(1.05);
+    }
+    .about-hero{
+        height:  400px;
+    }
+    .destination-grid .card{
+    flex: 0 0 calc((100% - var(--space-md)) / 2);
+    }
+
+    .destination-hero .hero-content h1{
+        font-size: 42px;
+    }
+    .destination-hero .hero-content .description{
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    .about-hero{
+        height: 400px;
+   
+    }
+    .about-hero h1{
+    font-size: 56px;
+    }
+}
+
+
+
+
+@media(max-width: 480px){
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-hero h1{
+        font-size: 42px;
+    }
+    .about-hero p{
+        font-size: 14px;
+    }
+    .who-we-are h2,
+    .our-mission h2,
+    .why-travel-with-us h2,
+    .our-story h2{
+        font-size: 28px;
+    }
+    .destination-grid .card{
+        flex: 0 0 100%;
+    }
+}
+
+
+
+@media(max-width: 600px){
+    .destinations-grid,
+    .package-grid,
+    .testimonial-grid{
+        grid-template-columns: 1fr;
+    }
+    .why-choose-us-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-brand .description{
+        max-width: 350px;
+        color: var(--text-on-dark);
+    }
+    .footer-social{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .why-travel-with-us-grid{
+        grid-template-columns: 1fr;
+    }
+    .who-we-are .description,
+    .our-mission .section-title p,
+    .our-story .section-title p,
+    .call-to-action p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .why-travel-with-us .card p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 576px){
+    .package-cards{
+        padding: 60px 0;
+    }
+    .package-cards .heading{
+        font-size: 32px
+    }
+    .package-cards .description{
+        font-size: 15px;
+    }
+
+    .why-choose-our-packages{
+        padding: 60px 0;
+    }
+    
+    .why-choose-our-packages .heading{
+        font-size: 32px;
+    }
+
+    .package-benefits-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 400px){
+    .hero h1{
+   
+        font-size: 24px;
+        line-height: 1.1;
+    
+    }
+    .logo{
+        font-size: 23px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero h1 span {
+        display: block;
+       font-size: 24px;
+    }
+    .why-choose-us-content h3{
+        font-size: 18px;
+    }
+    .why-choose-us-content p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .destination-grid .card{
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .destination-grid .destination-image img{
+        height: 180px;
+        border-radius: 6px;
+    }
+    .destination-grid .destination-content{
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    .destination-grid .destination-content h2{
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 6px;
+    }
+
+    .destination-grid .destination-content .tagline{
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+
+    }
+    .destination-grid .destination-content .description{
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+
+    }
+    .destination-grid .destination-content .btn{
+        font-size: 13px;
+        padding: 9px 14px;
+        margin: 5px 0;
+    }
+    .about-hero .subtitle{
+        font-size: 20px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce){
+    .menu{
+        transition: none;
+    }
+}
+
+
+
+
+/* ====  Responsive Layout CSS End ==== */
