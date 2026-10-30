@@ -1,0 +1,35 @@
+LIVE ON TRAVEL WEBSITE TEMPLATE - LICENSE
+
+Copyright (c) 2026 LIVE ON. All rights reserved.
+
+This license applies to the person or company who purchased
+"Live On Travel Website Template" (the "Buyer").
+
+WHAT YOU CAN DO
+- Use this template for your own websites.
+- Use this template for websites you build for your clients.
+- Edit, customize, and change the design, text, colors, fonts,
+  and code to fit each project.
+
+WHAT YOU CAN'T DO
+- Resell, share, or give away this template or its source files,
+  whether changed or not.
+- Repackage this template, or a copy of it, and sell or distribute
+  it as your own template or as part of another template, theme,
+  or product.
+- Upload the template files to any marketplace, template site,
+  file-sharing site, or public repository where others can
+  download them.
+
+THIRD-PARTY ASSETS
+Third-party assets used in this template, such as fonts and icons,
+keep their own licenses. These licenses are listed in CREDITS.md.
+You are responsible for following them.
+
+NO WARRANTY
+This template is provided "as is", without warranty of any kind.
+The author is not responsible for any loss or damage resulting
+from its use.
+
+QUESTIONS
+For support or license questions, contact: nazsite7@gmail.com

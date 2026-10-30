@@ -5,16 +5,16 @@
 
 
 const SITE_CONFIG = {
-    name: "Live On", //Your business or website name. Appears in the header and footer
-    tagline: "Live Your Own Journey", //A short slogan shown under the name
+    name: "NazSite", //Your business or website name. Appears in the header and footer
+    tagline: "Give Some Time To You", //A short slogan shown under the name
    
      //Your contact details, shown on the Contact page and in the footer
 
     contact: { 
-        email: "hello@example.com", //The email address visitors see
+        email: "Nazsite@example.com", //The email address visitors see
         phone: "+91 00000 00000", //Include the country code, for example +91
         whatsapp: "", // Leave empty if you don’t use WhatsApp.
-        address: "Your City, Your State, India" //Your business address
+        address: "Mumbai, Maharashtra, India" //Your business address
     },
 
     //Full link to each profile. Leave # if you don’t have one
